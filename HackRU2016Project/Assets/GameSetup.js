@@ -7,6 +7,7 @@ var leftWall : BoxCollider2D;
 var rightWall : BoxCollider2D;
 
 var Player01 : Transform;
+
 var Player02 : Transform;
 
 function Start () {
@@ -22,6 +23,8 @@ function Start () {
 
 		Player01.position.x = mainCam.ScreenToWorldPoint(new Vector3(75f, 0f, 0f)).x;
 		Player02.position.x = mainCam.ScreenToWorldPoint(new Vector3(Screen.width-0.75f,0f,0f)).x;
-
+		Player01.name = "player01";
+		Player01.tag = "player01";
+		topWall.name = "topWall";
 
 }
